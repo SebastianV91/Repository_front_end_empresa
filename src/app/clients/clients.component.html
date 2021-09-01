@@ -1,0 +1,22 @@
+<h1>{{titulo}}</h1>
+
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NIT</th>
+        <th scope="col">RAZON SOCIAL</th>
+        <th scope="col">CONTACTO</th>
+        <th scope="col">REGION</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of clients">
+        <th scope="row">{{client.id}}</th>
+        <td>{{client.identificacion_cc}}</td>
+        <td>{{client.razon_social}}</td>
+        <td>{{client.contacto}}</td>
+        <td>{{client.region}}</td>
+      </tr>
+    </tbody>
+  </table>
